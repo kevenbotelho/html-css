@@ -6,12 +6,29 @@
     <title>Teste de imagem de fundo</title>
 </head>
 <style>
+    body{
+        
+        }
     .quadrado{
         display: inline-block;
-        border: 1px solid black;
+        border: 2px solid black;
         width: 300px;
-        height: 300px
-    }
+        height: 300px;
+        border-radius: 10px;
+        background-color: lightgray;
+        }
+        #q1{
+            background-color: skyblue;
+        }
+        #q2{
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+        #q3{
+            background-image: url('imagens/pattern001.png');
+        }
+        p{
+            background-image: url(imagens/pattern004.png);
+        }
 </style>
 <body>
     <div class="quadrado" id="q1">
@@ -23,5 +40,6 @@
     <div class="quadrado" id="q3">
 
     </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur cupiditate quo doloremque, id cumque commodi ad eos nihil, excepturi dolor aspernatur tenetur nisi distinctio voluptates deleniti rerum ipsa nemo! Temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, iusto expedita vitae ad optio tenetur aspernatur deleniti enim impedit, qui atque blanditiis! Laudantium natus temporibus quaerat? Neque deleniti velit quod.</p>
 </body>
 </html>
