@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formluário</title>
 </head>
 <body>
-    
+    Select - abre uma caixa pra selecionar coisas dentro dela <br>
+        optgroup - Separa as opçoes por categorias <br>
+            option - as opçoes que vão aparecer dentro da caixa
+    <code style="display: block;">
+        <pre>
+            &lt;label for="iest">Estado&gt;/label>
+                &lt;select name="Estado" id="iest">
+                    &lt;optgroup label="Região Sudeste">
+                        &lt;option value="SP">São Paulo&lt;/option>
+                        &lt;option value="RJ">Rio de Janeiro&lt;/option>
+                        &lt;option value="MG">Minas Gerais&lt;/option>
+                    &lt;/optgroup>
+        </pre>
+    </code>
+    <h1>Exemplo de formuláario</h1>
+    <form action="">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="Estado" id="iest">
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="range" selected>Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="max">Maranhão</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="adm">Admnistrador</option>
+                <option value="cont">Contador</option>
+                <option value="dev">Desenvolvedor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>

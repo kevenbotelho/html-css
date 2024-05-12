@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/*Estilo Tela*/
+*{
+    margin: 0px;
+    padding: 0;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+header{
+    background-color: rgb(106, 149, 164);
+}
+h1{
+    text-align: center;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+}
+ul{
+    padding: 10px;
+} 
+article{
+    max-width: 600px;
+    margin: auto;
+}
