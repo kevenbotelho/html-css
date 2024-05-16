@@ -5,17 +5,20 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body, html{
-    background-color: rgb(117, 117, 221);
+    background-color: rgb(0, 0, 0);
 }
 header{
-    background-color: rgb(65, 176, 216);
+    background-color: rgb(0, 0, 0);
 }
 header h1{
     padding: 10px;
     text-align: center;
+    color: white;
 }
 span#burguer{
-    background-color: rgb(114, 87, 118);
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    background-color: rgb(0, 0, 0);
     color: white;
     text-align: center;
     padding: 10px;
@@ -23,7 +26,8 @@ span#burguer{
     cursor: pointer;
 }
 #burguer:hover{
-    background-color: violet;
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
 menu{
     display: none;
@@ -36,7 +40,7 @@ menu a{
     padding: 10px;
     text-align: center;
     text-decoration: none;
-    background-color: rgba(236, 100, 236, 0.804);
+    background-color: rgba(61, 61, 61, 0.804);
     color: white;
     border-top: 2px solid rgb(132, 112, 112);
 }
@@ -45,7 +49,8 @@ menu a:hover{
 }
 main{
     width: 90vw;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
     margin: auto;
     padding: 10px;
     border-radius: 10px;
@@ -53,10 +58,12 @@ main{
 }
 article h2{
     padding-bottom: 20px;
+    color: whitesmoke;
 
 }
 article p{
     text-align: justify;
     margin-bottom: 20px;
     text-indent: 20px;
+    color: white;
 }
