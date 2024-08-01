@@ -12,7 +12,7 @@
             justify-content: center;
             height: 88vh;
 
-            padding: 20px !important;
+            padding: 20px;
         }
         h3{
             padding: 10px 0 5px 0;
@@ -32,7 +32,6 @@
             margin: 5px;
             padding: 5px;
         }
-
         div.container{
             width: 90%;
             background-color: red;
@@ -46,15 +45,14 @@
             padding: 5px;
             margin: 5px;
         }
-
-        #start{
-            justify-content: flex-start;
+        #between{
+            justify-content: space-between;
         }
-        #center{
-            justify-content: center;
+        #evenly{
+            justify-content: space-evenly;
         }
-        #end{
-            justify-content: flex-end;
+        #around{
+            justify-content: space-around;
         }
     </style>
 </head>
@@ -62,28 +60,33 @@
     <main>
         <section>
             <h2>justify-content</h2>
-            <p>Alinha no main end</p>
-            <h3>flex-start</h3>
-            <p>Fica colado no main start <br> O espaço livro fica perto do main end</p>
-            <h3>center</h3>
-            <p>Os itens vão ficar centralizado</p>
-            <h3>flex-end</h3>
-            <p>O último item fica colado no main end</p>
+            <h3>space-between</h3>
+            <p>Cola os dois itens da extremidade para o canto e distribui igualmente os outros</p>
 
-            <h4>Flex-Start (padrão)</h4>
-            <div id="start" class="container">
+            <h3>space-evenly</h3>
+            <p>Tem espaços exatamente iguais entre eles</p>
+
+            <h3>space-around</h3>
+            <p>Conta quantos itens têm, divide igualmente os espaços e centraliza-os</p>
+             
+            <br>
+            
+            <h4>Space-Between</h4>
+            <div id="between" class="container">
                 <div class="item">1</div>
                 <div class="item">2</div>
                 <div class="item">3</div>
             </div>
-            <h4>Center</h4>
-            <div id="center" class="container">
+
+            <h4>Space-Evenly</h4>
+            <div id="evenly" class="container">
                 <div class="item">1</div>
                 <div class="item">2</div>
                 <div class="item">3</div>
             </div>
-            <h4>Flex-End</h4>
-            <div id="end" class="container">
+
+            <h4>Space-Around</h4>
+            <div id="around" class="container">
                 <div class="item">1</div>
                 <div class="item">2</div>
                 <div class="item">3</div>
@@ -91,8 +94,8 @@
         </section>
     </main>
     <aside>
-        <button><a href="pag004.html">Voltar</a></button>
-        <button><a href="pag006.html">Próximo</a></button>
+        <button><a href="pag005.html">Voltar</a></button>
+        <button><a href="pag007.html">Próximo</a></button>
     </aside>
 </body>
 </html>
