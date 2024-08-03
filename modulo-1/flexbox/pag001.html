@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        main{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            height: 88vh;
+            
+
+            padding: 20px !important;
+        }
+        h3{
+            padding: 10px 0 5px 0;
+        }
+        p{
+            padding: 5px 0;
+        }
+        aside{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+        aside button{
+            border: 1px solid black;
+            border-radius: 5px;
+
+            margin: 5px;
+            padding: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h2 id="direction">flex-direction</h2>        
+            <h3>row</h3>
+            <p>Os itens vão ser dispostos da esquerda pra direita</p>
+            <p>Ou seja, o main axis (direção do conteúdo) vai ser da esquerda pra direita</p>
+
+            <h3>row-reverse</h3>
+            <p>A disposição dos itens vai ser o contrário da normal (row), da direita pra esquerda</p>
+            <p>Ou seja, o main axis vai ser da direita pra esquerda</p>
+
+            <h3>column</h3>
+            <p>Tem a direção de uma coluna (em pé). Tem o fluxo de cima pra baixo</p>
+            <p>O main axis vai ser de cima pra baixo</p>
+
+            <h3>column-reverse</h3>
+            <p>Tem a direção contrária, de baixo pra cima</p>
+            <p>O main axis é de baixo pra cima</p>
+        </section>
+
+       
+    </main>
+    <aside>
+        <button><a href="../flexbox.html">Voltar</a></button>
+        <button><a href="pag002.html">Próxima</a></button>
+    </aside>
+</body>
+</html>

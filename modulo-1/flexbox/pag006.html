@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        main{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            height: 88vh;
+
+            padding: 20px;
+        }
+        h3{
+            padding: 10px 0 5px 0;
+        }
+        p{
+            padding: 5px 0;
+        }
+        aside{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+        aside button{
+            border: 1px solid black;
+            border-radius: 5px;
+
+            margin: 5px;
+            padding: 5px;
+        }
+        div.container{
+            width: 90%;
+            background-color: red;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: ;
+
+        }
+        div.item{
+            background-color: lightblue;
+            padding: 5px;
+            margin: 5px;
+        }
+        #between{
+            justify-content: space-between;
+        }
+        #evenly{
+            justify-content: space-evenly;
+        }
+        #around{
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>justify-content</h2>
+            <h3>space-between</h3>
+            <p>Cola os dois itens da extremidade para o canto e distribui igualmente os outros</p>
+
+            <h3>space-evenly</h3>
+            <p>Tem espaços exatamente iguais entre eles</p>
+
+            <h3>space-around</h3>
+            <p>Conta quantos itens têm, divide igualmente os espaços e centraliza-os</p>
+             
+            <br>
+            
+            <h4>Space-Between</h4>
+            <div id="between" class="container">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </div>
+
+            <h4>Space-Evenly</h4>
+            <div id="evenly" class="container">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </div>
+
+            <h4>Space-Around</h4>
+            <div id="around" class="container">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </div>
+        </section>
+    </main>
+    <aside>
+        <button><a href="pag005.html">Voltar</a></button>
+        <button><a href="pag007.html">Próximo</a></button>
+    </aside>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        main{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+
+            padding: 20px ;
+        }
+        h3{
+            padding: 10px 0 5px 0;
+        }
+        p{
+            padding: 5px 0;
+        }
+        aside{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+        aside button{
+            border: 1px solid black;
+            border-radius: 5px;
+
+            margin: 5px;
+            padding: 5px;
+        }
+        div.container{
+            width: 90%;
+            height: 300px;
+            background-color: red;
+            display: flex;
+            flex-flow: row nowrap;
+
+
+
+        }
+        div.item{
+            background-color: lightblue;
+            padding: 5px;
+            margin: 5px;
+        }
+        #stretch{
+            align-items: stretch;
+        }
+        #start{
+            align-items: flex-start;
+        }
+        #center{
+            align-items: center;
+        }
+        #end{
+            align-items: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>align items</h2>
+
+            <h3>stretch (<span style="color: red;">padrão</span>)</h3>
+            <p>Segue o eixo transversal (Cross axis)</p>
+
+            <h3>flex start</h3>
+            <p>Gruda os itens no início do eixo transversal</p>
+
+            <h3>center</h3>
+            <p>Centraliza no cross axis</p>
+
+            <h3>flex end</h3>
+            <p>Gruda os itens no final do cross axis</p>
+            <br>
+            
+            <h4>stretch</h4>
+            <div id="stretch" class="container">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </div>
+
+            <h4>Flex Start</h4>
+            <div id="start" class="container">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </div>
+
+            <h4>Center</h4>
+            <div id="center" class="container">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </div>
+
+            <h4>Flex end</h4>
+            <div id="end" class="container">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </div>
+        </section>
+    </main>
+    <aside>
+        <button><a href="pag005.html">Voltar</a></button>
+        <button><a href="pag007.html">Próximo</a></button>
+    </aside>
+</body>
+</html>

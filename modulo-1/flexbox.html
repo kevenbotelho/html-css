@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        main{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            height: 88vh;
+
+            padding: 20px !important;
+        }
+        h3{
+            padding: 10px 0 5px 0;
+        }
+        p{
+            padding: 5px 0;
+        }
+        aside{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+        aside button{
+            border: 1px solid black;
+            border-radius: 5px;
+
+            margin: 5px;
+            padding: 5px;
+        }
+        li#direction:hover ul#igr{
+            display: block;
+        }
+        li#direction ul{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section id="principal">
+        <h1>Flexbox</h1>
+        <p>Primeiro se identifica quem é o pai. Vai ser ele que vai levar a configuração de pai</p>
+        <p>Para identificar quem é o pai é só saber onde que estão os itens que eu quero mexer</p>
+        <h2>Configurações para o pai</h2>
+        <ul>
+            <li id="direction">
+                <a href="flexbox/pag001.html">flex-direction</a>
+                <ul id="igr">
+                    <li>row</li>
+                    <li>row-reverse</li>
+                    <li>column</li>
+                    <li>column-reverse</li>
+                </ul>
+            </li>
+            
+            <li><a href="flexbox/pag003.html" type="hover">flex-wrap</a></li>
+            <ul>
+                <li>nowrap</li>
+                <li>wrap</li>
+                <li>wrap-reverse</li>
+            </ul>
+        </ul>
+        </section>
+    </main>
+    <aside>
+        <button><a href="pag02.html">Voltar</a></button><button><a href="flexbox/pag001.html">Próxima Página</a></button>
+    </aside>
+</body>
+</html>
