@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocuFlexible boxment</title>
+    <style>
+        /*
+        around: divide a caixa pela quantidade de itens  e centraliza
+
+        between: joga pra extremidade e distribui pelo meio os outros
+
+        evenly: espaços iguais
+        */
+        .container{
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+        }
+        .item{
+            background-color: lightskyblue;
+            border: 1px solid;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        
+    </div>
+</body>
+</html>
