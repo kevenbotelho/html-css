@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible boxment</title>
+    <style>
+        .container{
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .item{
+            background-color: lightskyblue;
+            border: 1px solid;
+            text-align: center;
+            padding: 20px;
+        }
+        #i1{
+            order: 0;
+        }
+        #i2{
+            order: -2;
+        }
+        #i3{
+            order: 4;
+        }
+        #i4{
+            order: 8;
+        }
+        #i5{
+            order: 2;
+        }
+        #i6{
+            order: 0;
+        }
+        #i7{
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">aula 1</div>
+        <div class="item" id="i2">aula 2</div>
+        <div class="item" id="i3">aula 3</div>
+        <div class="item" id="i4">aula 4</div>
+        <div class="item" id="i5">aula 5</div>
+        <div class="item" id="i6">aula 6</div>
+        <div class="item" id="i7">aula 7</div>
+        
+    </div>
+</body>
+</html>
