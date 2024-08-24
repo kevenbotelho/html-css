@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: lightcyan;
+    height: 100vh;
+    width: 100vw;
+}
+header{
+    background-color: gray;
+    color: white;
+    padding: 10px;
+}
+header h1{
+    border: 1px dashed;
+}
+nav{
+    border: 1px dashed ;
+}
+main{
+    background-color: rgba(133, 133, 133, 0.635);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(54, 54, 54, 0.722);
+}
