@@ -12,9 +12,13 @@ body{
     width: 100dvw;
     height: 100vh;
 }
-p , h1 , h2{
+p {
     margin-bottom: 10px;
     text-align: justify;
+}
+h1 , h2{
+    margin-bottom: 20px;
+    line-height: 1.2em;
 }
 header , section.normal{
     padding: 20px;
@@ -46,7 +50,8 @@ article div.media{
 div.media img{
     display: block;
     margin: auto;
-    max-width: 400px;
+    max-width: 300px;
+    padding: 15px;
 }
 div.media iframe{
     display: block;
