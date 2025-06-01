@@ -1,47 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flexible box</title>
     <style>
-        /*
-        Justify content : alinha o conteudo no eixo transversal (main axis)
-
-        space-between: coloca os ultimos nas estremidades e distribui os outros igualmennte no meio
-
-        space-evenly: coloca espaçamentos iguais antes e depois dos itens( nao se repete os espaçamentos, por exemplo, nao tem dois espaços do lado, é só um em cada lado)
-
-        space-around: conta quantos itens eu tenho e divide o container com espaçamentos iguais e centraliza os itens dentro de cada pedaço (por exemplo, eu tenho 5 itens, ele pega e divide o container em 5 pedaços iguais e centraliza todos dentro desses pedaços)
-        */
         div.container{
-            background-color: red;
-            justify-content: ev;
+            background-color: lightsalmon;
             display: flex;
             flex-flow: row wrap;
-        }
+        } 
         div.item{
-            background-image: url(https://img.freepik.com/fotos-gratis/respingo-colorido-abstrato-3d-background-generativo-ai-background_60438-2509.jpg);
-            
-            width: 200px;
-            height: 200px;
-            background-color: gray;
-            border: 1px dashed;
-            flex: auto;
+            background-color: lightblue;
+            border: 1px solid;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyDo8oBNZimtW1L_rW0EwZiBp6MYE-pJtFLA&s" alt="">
-    <h1>Flexible box</h1>
-    <div class="container">
-        <div class="item">Exemplo de bloco a</div>
-        <div class="item">Exemplo de bloco b</div>
-        <div class="item">Exemplo de bloco c</div>
-        <div class="item">Exemplo de bloco d</div>
-        <div class="item">Exemplo de bloco e</div>
-        <div class="item">Exemplo de bloco f</div>
-        <div class="item">Exemplo de bloco g</div>
-    </div>
+    <main>
+        <div class="container">
+            <div class="item">A EXEMPLO DE BLOCO</div>
+            <div class="item">B EXEMPLO DE BLOCO</div>
+            <div class="item">C EXEMPLO DE BLOCO</div>
+            <div class="item">A EXEMPLO DE BLOCO</div>
+            <div class="item">A EXEMPLO DE BLOCO</div>
+            <div class="item">A EXEMPLO DE BLOCO</div>
+            <div class="item">G EXEMPLO DE BLOCO</div>
+        </div>
+    </main>
 </body>
 </html>

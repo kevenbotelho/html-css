@@ -1,35 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flexible box</title>
     <style>
-        div.container{
-            background-color: red;
-
-            display: flex;
-            flex-direction: row-reverse;
-            flex-wrap: wrap-reverse;
+        main{
+            height: 500px;
+            border: 1px solid black;
         }
+        div.container{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: column wrap-reverse;
+        } 
         div.item{
-            background-color: gray;
+            background-color: lightblue;
+            padding: 20px;
             border: 1px solid;
-            text-align: center;
-            padding: 10px;
-            width: 100px;
+            
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="item">a</div>
-        <div class="item">b</div>
-        <div class="item">c</div>
-        <div class="item">d</div>
-        <div class="item">e</div>
-        <div class="item">f</div>
-        <div class="item">g</div>
-    </div>
+    <main>
+        <div class="container">
+            <div class="item">A</div>
+            <div class="item">A</div>
+            <div class="item">A</div>
+            <div class="item">C</div>
+            <div class="item">A</div>
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">A</div>
+            <div class="item">A</div>
+            <div class="item">A</div>
+            <div class="item">C</div>
+            <div class="item">A</div>
+            <div class="item">A</div>
+            <div class="item">B</div>
+        </div>
+    </main>
 </body>
 </html>

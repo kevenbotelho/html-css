@@ -1,42 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DocuFlexible boxment</title>
+    <title>Flexible box</title>
     <style>
-        .container{
+        div.container{
             background-color: lightsalmon;
-
             display: flex;
-            flex-direction: column-reverse;
-            /*
-            nota: main é conteudo, então o main é a disposição do conteudo, ou seja, se o conteudo tá da esquerda pra direita, então o main-axis é da direita pra esquerda
-
-
-            row = 
-            main : esquerda - direita
-            crross = cima - baixo
-            */
-        }
-        .item{
-            background-color: lightskyblue;
-            border: 1px solid;
-            text-align: center;
+        } 
+        div.item{
+            background-color: lightblue;
             flex: auto;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="item">aula 1</div>
-        <div class="item">aula 2</div>
-        <div class="item">aula 3</div>
-        <div class="item">aula 4</div>
-        <div class="item">aula 5</div>
-        <div class="item">aula 6</div>
-        <div class="item">aula 7</div>
-        
-    </div>
+    <main>
+        <div class="container">
+            <div class="item">A</div>
+            <div class="item">A</div>
+            <div class="item">A</div>
+            <div class="item">A</div>
+            <div class="item">A</div>
+            <div class="item">A</div>
+            <div class="item">A</div>
+        </div>
+    </main>
 </body>
 </html>
